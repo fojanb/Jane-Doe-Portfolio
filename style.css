@@ -3,10 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
-/* Custome Properties */
+/* Custome Properties -- CSS Variables*/
 :root {
   --ff-primary: "Source Sans Pro", sans-serif;
-  --ff-secondary: "Source Code Pro", monoscope;
+  --ff-secondary: "Source Code Pro", monospace;
   --fw-reg: 300;
   --fw-bold: 900;
   --clr-light: #fff;
@@ -35,6 +35,9 @@ body {
   font-size: var(--fs-body);
   line-height: 1.6;
 }
+section{
+  padding: 5em 2em;
+}
 img {
   display: block;
   max-width: 100%;
@@ -43,7 +46,7 @@ img {
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1;
   margin: 0;
 }
 h1 {
@@ -55,9 +58,32 @@ h2 {
 h3 {
   font-size: var(--fs-h3);
 }
-.section-title{
-
+strong {
+  font-weight: var(--fw-bold);
 }
-.section-subtitle{
-    
+.section-title {
+  margin-bottom: 0.25em;
+}
+.section-title-home {
+  font-weight: var(--fw-reg);
+}
+.section-title-home > strong {
+  display: block;
+}
+.section-subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+.section-subtitle-home,
+.section-title-about-me {
+  background-color: var(--clr-accent);
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+/* Intro Section */
+header{
+  display: none;
+}
+.intro{
+  position: relative;
 }
