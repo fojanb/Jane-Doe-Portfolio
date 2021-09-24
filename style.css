@@ -9,9 +9,9 @@
   --ff-secondary: "Source Code Pro", monospace;
   --fw-reg: 300;
   --fw-bold: 900;
-  --clr-light: #fff;
-  --clr-dark: #303030;
-  --clr-accent: #2a9d8f;
+  --clr-light: #ede0d4;
+  --clr-dark: #352208;
+  --clr-accent: #d1b79d;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -35,7 +35,7 @@ body {
   font-size: var(--fs-body);
   line-height: 1.6;
 }
-section{
+section {
   padding: 5em 2em;
 }
 img {
@@ -77,13 +77,44 @@ strong {
 .section-subtitle-home,
 .section-title-about-me {
   background-color: var(--clr-accent);
+  padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
 /* Intro Section */
-header{
+header {
   display: none;
 }
-.intro{
+.intro {
   position: relative;
+}
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+  .intro-img {
+    grid-area: "img";
+    min-width: 300px;
+  }
+  .section-subtitle-home {
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    bottom: 300px;
+    z-index: -1;
+    /* bottom: 100px;
+    z-index: -1;
+    padding-right: 10px; */
+    width: 700px;
+  }
 }
