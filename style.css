@@ -126,9 +126,8 @@ strong {
   font-size: 25px;
   box-shadow: var(--bs-2);
 }
-.section-subtitle-my-work{
-width: 480px;
-
+.section-subtitle-my-work {
+  width: 480px;
 }
 /* Intro Section */
 header {
