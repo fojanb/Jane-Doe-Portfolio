@@ -235,4 +235,13 @@ header {
 /* My Work Gallery */
 .work-gallery {
   background-color: var(--transparentBG);
+  text-align: center;
+}
+.my-work-gallery {
+  display: grid;
+  grid-template-areas:
+    "img img img"
+    "img img img"
+    "img img img";
+    grid-gap: 1em;
 }
