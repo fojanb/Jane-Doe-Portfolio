@@ -126,9 +126,7 @@ strong {
   font-size: 25px;
   box-shadow: var(--bs-2);
 }
-.section-subtitle-my-work {
-  width: 480px;
-}
+
 /* Intro Section */
 header {
   display: none;
@@ -197,4 +195,24 @@ header {
 }
 .my-work {
   margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .my-work {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img img"
+      "subtitle img img"
+      "text img img";
+  }
+  .section-title-my-work {
+    grid-area: title;
+  }
+  .section-subtitle-my-work{
+    grid-area: subtitle;
+  }
+  .my-work-image {
+    grid-area: img;
+    box-shadow: var(--bs-1);
+  }
 }
