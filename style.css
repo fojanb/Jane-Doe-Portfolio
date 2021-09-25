@@ -197,7 +197,7 @@ header {
 .my-work {
   margin: 0 auto;
 }
-@media (min-width: 600px) {
+@media (min-width: 600px) and (min-width : 800px) {
   .my-work {
     display: grid;
     grid-template-columns: 1fr 200px;
@@ -205,15 +205,27 @@ header {
       "title img img"
       "subtitle img img"
       "text img img";
+    grid-column-gap: 2em;
   }
   .section-title-my-work {
     grid-area: title;
   }
   .section-subtitle-my-work {
     grid-area: subtitle;
+    grid-column: 1/-1;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px+4em);
+    /* height: 60px;
+    justify-content: center; */
   }
   .my-work-image {
     grid-area: img;
     box-shadow: var(--bs-1);
+    z-index: 2;
+    position: relative;
+    z-index: 2;
   }
 }
