@@ -10,14 +10,19 @@
   --fw-reg: 300;
   --fw-bold: 900;
   --clr-light: #2f440d;
-  --clr-dark: #ffffff;
+  --clr-dark: #fafafa;
   --clr-accent: #588157;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1.5rem;
-  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+  --bs-1: 0.25em 0.25em 0.75em 0.75em rgba(0, 0, 0, 0.25),
     0.25em 0.25em 0.5em rgba(0, 0, 0, 0.5);
+  --bs-2: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.25em 0.25em 0.5em rgba(0, 0, 0, 0.15);
+  --br: 5px;
+  --ts:2px 2px 8px #5a5a5a;
+  --ts-title : 5px 5px 8px #17382a;
 }
 @media (min-width: 800px) {
   :root {
@@ -38,7 +43,6 @@ html {
 
 /* General Styles */
 body {
-  /* background-color: var(--clr-light); */
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
@@ -46,11 +50,6 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(173, 128, 128, 0.3)
-  ); */
 }
 section {
   padding: 5em 2em;
@@ -68,7 +67,8 @@ h3 {
 }
 h1 {
   font-size: var(--fs-h1);
-  color: var(--clr-light);
+  text-shadow: var(--ts);
+
 }
 h2 {
   font-size: var(--fs-h2);
@@ -84,6 +84,8 @@ strong {
 }
 .section-title-home {
   font-weight: var(--fw-reg);
+  text-shadow: var(--ts);
+
 }
 .section-title-home > strong {
   display: block;
@@ -94,14 +96,19 @@ strong {
 }
 .section-subtitle-home,
 .section-title-about-me,
-.section-title-my-work {
+.section-title-my-work,
+.section-title-contact {
   background-color: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
+  text-shadow: var(--ts-title);
+  border-radius: var(--br);
+
 }
-.section-subtitle-home{
+.section-subtitle-home {
   font-size: 30px;
+  box-shadow: var(--bs-2);
 }
 /* Intro Section */
 header {
@@ -111,7 +118,8 @@ header {
   position: relative;
 }
 .intro-img {
-  box-shadow: var(--bs);
+  box-shadow: var(--bs-1);
+  border-radius: var(--br);
 }
 @media (min-width: 600px) {
   .intro {
