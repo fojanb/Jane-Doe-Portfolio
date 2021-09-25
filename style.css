@@ -218,8 +218,8 @@ header {
     width: calc(100% + 2em);
     padding-left: 1em;
     padding-right: calc(200px+4em);
-    /* height: 60px;
-    justify-content: center; */
+    height: 60px;
+    justify-content: center;
   }
   .my-work-image {
     grid-area: img;
