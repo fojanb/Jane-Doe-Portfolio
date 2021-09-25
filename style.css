@@ -114,7 +114,8 @@ strong {
   font-size: var(--fs-h3);
 }
 .section-subtitle-home,
-.section-title-contact {
+.section-title-contact,
+.section-subtitle-my-work {
   background-color: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
@@ -124,6 +125,10 @@ strong {
 .section-subtitle-home {
   font-size: 25px;
   box-shadow: var(--bs-2);
+}
+.section-subtitle-my-work{
+width: 480px;
+
 }
 /* Intro Section */
 header {
