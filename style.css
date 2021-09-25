@@ -18,9 +18,9 @@
   --fs-h3: 1.25rem;
   --fs-body: 1.5rem;
   --bs-1: 0.25em 0.25em 0.75em 0.75em rgba(78, 44, 2, 0.25),
-    0.25em 0.25em 0.5em rgba(0, 0, 0, 0.5);
+    0.25em 0.25em 0.5em rgba(78, 44, 2, 0.5);
   --bs-2: 0.25em 0.25em 0.75em rgba(78, 44, 2, 0.25),
-    0.25em 0.25em 0.5em rgba(0, 0, 0, 0.15);
+    0.25em 0.25em 0.5em rgba(78, 44, 2, 0.15);
   --br: 5px;
   --ts: 2px 2px 8px #4c2e05;
   --ts-title: 5px 5px 8px #4c2e05;
@@ -203,6 +203,9 @@ header {
 }
 .my-work {
   margin: 0 auto;
+}
+.my-work-image{
+  box-shadow: var(--bs-1);
 }
 @media (min-width: 600px) and (min-width: 800px) {
   .my-work {
