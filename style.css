@@ -116,7 +116,8 @@ strong {
 }
 .section-subtitle-home,
 .section-title-contact,
-.section-subtitle-my-work {
+.section-subtitle-my-work,
+.section-subtitle-work-gallery {
   background-color: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
@@ -172,7 +173,8 @@ header {
   background-color: var(--transparentBG);
 }
 .section-title-about-me,
-.section-title-my-work {
+.section-title-my-work,
+.section-title-work-gallery {
   position: relative;
   border-bottom: 2px solid var(--clr-accent);
   text-shadow: var(--ts-title);
