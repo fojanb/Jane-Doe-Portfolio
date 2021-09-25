@@ -121,6 +121,7 @@ strong {
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
   text-shadow: var(--ts-title);
+  box-shadow: var(--bs-2);
 }
 .section-subtitle-home {
   font-size: 25px;
@@ -208,7 +209,7 @@ header {
   .section-title-my-work {
     grid-area: title;
   }
-  .section-subtitle-my-work{
+  .section-subtitle-my-work {
     grid-area: subtitle;
   }
   .my-work-image {
