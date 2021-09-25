@@ -116,8 +116,7 @@ strong {
 }
 .section-subtitle-home,
 .section-title-contact,
-.section-subtitle-my-work,
-.section-subtitle-work-gallery {
+.section-subtitle-my-work {
   background-color: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
@@ -128,6 +127,11 @@ strong {
 .section-subtitle-home {
   font-size: 25px;
   box-shadow: var(--bs-2);
+}
+.section-subtitle-work-gallery{
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-secondary);
+  text-shadow: var(--ts-title);
 }
 
 /* Intro Section */
@@ -239,9 +243,5 @@ header {
 }
 .my-work-gallery {
   display: grid;
-  grid-template-areas:
-    "img img img"
-    "img img img"
-    "img img img";
-    grid-gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
 }
