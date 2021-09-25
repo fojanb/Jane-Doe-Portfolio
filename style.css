@@ -11,7 +11,7 @@
   --fw-bold: 900;
   --clr-light: #2f440d;
   --clr-dark: #fafafa;
-  --clr-accent: #588157;
+  --clr-accent: #a35200;
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -21,8 +21,8 @@
   --bs-2: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.25em 0.25em 0.5em rgba(0, 0, 0, 0.15);
   --br: 5px;
-  --ts:2px 2px 8px #5a5a5a;
-  --ts-title : 5px 5px 8px #17382a;
+  --ts: 2px 2px 8px #4c2e05;
+  --ts-title: 5px 5px 8px #4c2e05;
 }
 @media (min-width: 800px) {
   :root {
@@ -36,7 +36,7 @@
 html {
   position: relative;
   min-height: 100vh;
-  background-image: url("./assets/desktop/bg.jpg");
+  background-image: url("./assets/desktop/bg2.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -68,7 +68,6 @@ h3 {
 h1 {
   font-size: var(--fs-h1);
   text-shadow: var(--ts);
-
 }
 h2 {
   font-size: var(--fs-h2);
@@ -85,7 +84,6 @@ strong {
 .section-title-home {
   font-weight: var(--fw-reg);
   text-shadow: var(--ts);
-
 }
 .section-title-home > strong {
   display: block;
@@ -95,7 +93,6 @@ strong {
   font-size: var(--fs-h3);
 }
 .section-subtitle-home,
-.section-title-about-me,
 .section-title-my-work,
 .section-title-contact {
   background-color: var(--clr-accent);
@@ -104,7 +101,6 @@ strong {
   margin-bottom: 1em;
   text-shadow: var(--ts-title);
   border-radius: var(--br);
-
 }
 .section-subtitle-home {
   font-size: 25px;
@@ -145,9 +141,27 @@ header {
     left: -1.5em;
     bottom: 300px;
     z-index: -1;
-    /* bottom: 100px;
-    z-index: -1;
-    padding-right: 10px; */
     width: 700px;
+  }
+}
+/* ----Know Me Better--- */
+.about-me {
+  text-align: center;
+  background-color: rgba(41, 25, 6, 0.4);
+}
+.section-title-about-me {
+  position: relative;
+  border-bottom: 2px solid var(--clr-accent);
+  text-shadow: var(--ts-title);
+  font-family: var(--ff-secondary);
+}
+@media (min-width: 800px) {
+  .know-me-better {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .work + .work {
+    margin-left: 3em;
   }
 }
