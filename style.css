@@ -12,6 +12,7 @@
   --clr-light: #2f440d;
   --clr-dark: #fafafa;
   --clr-accent: #a35200;
+  --transparentBG: rgba(41, 25, 6, 0.4);
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -168,7 +169,7 @@ header {
 /* ----Know Me Better--- */
 .about-me {
   text-align: center;
-  background-color: rgba(41, 25, 6, 0.4);
+  background-color: var(--transparentBG);
 }
 .section-title-about-me,
 .section-title-my-work {
@@ -197,7 +198,7 @@ header {
 .my-work {
   margin: 0 auto;
 }
-@media (min-width: 600px) and (min-width : 800px) {
+@media (min-width: 600px) and (min-width: 800px) {
   .my-work {
     display: grid;
     grid-template-columns: 1fr 200px;
@@ -228,4 +229,8 @@ header {
     position: relative;
     z-index: 2;
   }
+}
+/* My Work Gallery */
+.work-gallery {
+  background-color: var(--transparentBG);
 }
