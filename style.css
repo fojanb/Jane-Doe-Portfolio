@@ -204,8 +204,8 @@ header {
 .my-work {
   margin: 0 auto;
 }
-.my-work-image{
-  box-shadow: var(--bs-1);
+.my-work-image {
+  box-shadow: var(--bs-2);
 }
 @media (min-width: 600px) and (min-width: 800px) {
   .my-work {
@@ -233,7 +233,6 @@ header {
   }
   .my-work-image {
     grid-area: img;
-    box-shadow: var(--bs-1);
     z-index: 2;
     position: relative;
     z-index: 2;
