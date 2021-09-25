@@ -75,6 +75,28 @@ h2 {
 h3 {
   font-size: var(--fs-h3);
 }
+:focus{
+  outline: 2px solid var(--clr-dark);
+  outline-offset: 3px;
+}
+/* Buttons */
+.btn{
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background-color: var(--clr-accent);
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--clr-dark);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+
+}
+.btn:hover{
+  transform: scale(1.1);
+}
 strong {
   font-weight: var(--fw-bold);
 }
@@ -155,12 +177,17 @@ header {
   text-shadow: var(--ts-title);
   font-family: var(--ff-secondary);
 }
+.work{
+  max-width: 500px;
+  margin: 0 auto;
+}
 @media (min-width: 800px) {
   .know-me-better {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
   }
+  /* Sibling Gap */
   .work + .work {
     margin-left: 3em;
   }
