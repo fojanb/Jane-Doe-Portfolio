@@ -1,6 +1,17 @@
 const navToggle = document.querySelector(".nav-toggle");
-const hamburger = document.querySelector(".hamburger")
+const navLinks = document.querySelectorAll(".nav-link");
 navToggle.addEventListener("click",()=>{
     document.body.classList.toggle("nav-open");
-    hamburger.classList.toggle("nav")
+})
+navLinks.forEach(link => {
+    link.addEventListener("click",()=>{
+        document.body.classList.remove("nav-open");
+        window.scrollTo({
+            top: 100,
+            left: 0,
+            behavior: 'smooth'
+          });
+        
+
+    })
 })
