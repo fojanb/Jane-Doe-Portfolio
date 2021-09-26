@@ -205,6 +205,18 @@ header {
   transform: rotate(90deg) translateX(-6px);
 }
 /* JavaScript say bye! */
+.nav-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item img{
+  width: 40px;
+  height: 40px;
+  margin-right: 5px ;
+}
+
 .hamburger {
   display: block;
   position: relative;
