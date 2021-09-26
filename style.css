@@ -187,10 +187,23 @@ header {
   top: 2em;
   z-index: 1000;
 }
+/* JavaScript say hello! */
 .nav-open .nav {
   transform: translate(0);
 }
-
+.nav-open .nav-toggle {
+  position: fixed;
+}
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+/* JavaScript say bye! */
 .hamburger {
   display: block;
   position: relative;
