@@ -179,6 +179,11 @@ header {
   border:0;
   padding: 0.5em;
   cursor: pointer;
+  position: absolute;
+  right:2em;
+  top:2em;
+  z-index: 1000;
+
 }
 .hamburger {
   display: block;
