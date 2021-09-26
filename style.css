@@ -229,18 +229,29 @@ header {
     display: grid;
     width: min-content;
     margin: 0 auto;
-    grid-column-gap: 1em;
+    grid-column-gap: 2em;
     grid-template-areas:
       "img title"
       "img subtitle";
     grid-template-columns: min-content max-content;
   }
   .intro-img {
-    grid-area: "img";
+    grid-area: img;
     min-width: 300px;
+    z-index: 2;
   }
   .section-subtitle-home {
-    align-self: start;
+    grid-row: 2;
+    grid-column: 1/-1;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px+4em);
+    height: 60px;
+    justify-content: center;
+    text-align: right;
+    /* align-self: start;
     grid-column: -1/1;
     grid-row: 2;
     text-align: right;
@@ -248,7 +259,7 @@ header {
     left: -1.5em;
     bottom: 300px;
     z-index: -1;
-    width: 700px;
+    width: 700px; */
   }
 }
 /* ----Know Me Better--- */
