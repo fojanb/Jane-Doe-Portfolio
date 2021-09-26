@@ -208,6 +208,7 @@ header {
   display: block;
   position: relative;
 }
+
 .hamburger,
 .hamburger::after,
 .hamburger::before {
