@@ -286,7 +286,7 @@ header {
 .section-title-my-work,
 .section-title-work-gallery {
   position: relative;
-  border-bottom: 2px solid var(--clr-accent);
+  border-bottom: 3px solid #e9c46a;
   text-shadow: var(--ts-title);
   font-family: var(--ff-secondary);
 }
