@@ -41,6 +41,7 @@ html {
   background-image: url("./assets/desktop/bg2.jpg");
   background-size: cover;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 /* General Styles */
