@@ -38,19 +38,19 @@
 }
 /* ----------------------------- */
 html {
-  position: relative;
-  min-height: 100vh;
+  /* position: relative;
+  min-height: 100vh; */
   background-image: url("./assets/desktop/bg2.jpg");
-  background-size: cover;
+  /* background-size: cover;
   background-attachment: fixed;
-  scroll-behavior: smooth;
-}
-@media (max-width:600px) {
-  html{
-    background-image: url("./assets/desktop/small.png");
-
-  }
-  
+  scroll-behavior: smooth; */
+  min-height:100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* General Styles */
@@ -60,8 +60,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ 
 }
 section {
   padding: 5em 2em;
