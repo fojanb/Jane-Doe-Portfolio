@@ -13,7 +13,7 @@
   --clr-light: #fafafa;
   --clr-dark: #361f01;
   --clr-accent: #a35200;
-  --clr-footer : #e9c46a;
+  --clr-footer: #e9c46a;
   --transparentBG: rgba(78, 44, 2, 0.4);
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -44,14 +44,12 @@ html {
   /* background-size: cover;
   background-attachment: fixed;
   scroll-behavior: smooth; */
-  min-height:100%;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  -moz-background-size: cover;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-position: center center;
+  background-attachment: fixed;
 }
+
 
 /* General Styles */
 body {
@@ -60,7 +58,8 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
- 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 section {
   padding: 5em 2em;
@@ -421,5 +420,3 @@ header {
 .social-list-item img:hover {
   opacity: 0.7;
 }
-
- 
