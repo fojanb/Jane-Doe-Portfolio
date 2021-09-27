@@ -38,19 +38,19 @@
 }
 /* ----------------------------- */
 html {
-  /* position: relative;
-  min-height: 100vh; */
+  height: 100%;
   background-image: url("./assets/desktop/bg2.jpg");
-  /* background-size: cover;
-  background-attachment: fixed;
-  scroll-behavior: smooth; */
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; */
 }
-
 
 /* General Styles */
 body {
