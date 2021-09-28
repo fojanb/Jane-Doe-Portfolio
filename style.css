@@ -51,7 +51,11 @@ html {
   background-attachment: fixed;
   scroll-behavior: smooth; */
 }
-
+@media (max-width: 600px) {
+  html {
+    background-image: url("./assets/desktop/small-bg.png");
+  }
+}
 /* General Styles */
 body {
   color: var(--clr-light);
