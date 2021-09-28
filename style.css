@@ -53,7 +53,8 @@ html {
 }
 @media (max-width: 600px) {
   html {
-    background-image: url("./assets/desktop/final.png");
+    background-image: none;
+    background-color: var(--clr-dark);
   }
 }
 /* General Styles */
