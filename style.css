@@ -53,7 +53,7 @@ html {
 }
 @media (max-width: 600px) {
   html {
-    background-image: url("./assets/desktop/small-bg.png");
+    background-image: url("./assets/desktop/final.png");
   }
 }
 /* General Styles */
